@@ -1,4 +1,5 @@
 import './About.css';
+import me from '../assets/me2.jpeg';
 
 function About() {
     return (
@@ -6,7 +7,7 @@ function About() {
             <h2>Get to know me more...</h2>
             <div className="intro-row">
                 <div className="myself-image">
-                    <img src="./src/assets/me2.jpeg" alt="" className="image" />
+                    <img src={me} alt="" className="image" />
                 </div>
 
                 <div className="intro-container">

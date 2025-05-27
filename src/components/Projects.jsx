@@ -1,4 +1,7 @@
 import './Projects.css';
+import arc from '../assets/arc.jpeg';
+import lit from '../assets/litlog.png';
+import wine from '../assets/wine.png';
 
 function Projects() {
     return (
@@ -7,7 +10,7 @@ function Projects() {
             <div className="projects-container">
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="./src/assets/arc.jpeg" alt="" className="image" />
+                        <img src={arc} alt="" className="image" />
                     </div>
                     <div className="project-info">
                         <p className="projtitle">Arc’connect</p>
@@ -40,7 +43,7 @@ function Projects() {
 
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="./src/assets/litlog.png" alt="" className="image" />
+                        <img src={lit} alt="" className="image" />
                     </div>
                     <div className="project-info">
                         <p className="projtitle">LitLog</p>
@@ -69,7 +72,7 @@ function Projects() {
 
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="./src/assets/wine.png" alt="" className="image" />
+                        <img src={wine} alt="" className="image" />
                     </div>
                     <div className="project-info">
                         <p className="projtitle">Red Wine Quality Prediction Model</p>
