@@ -1,4 +1,6 @@
 import './Contact.css';
+import resume from '../assets/resume.pdf';
+
 
 function Contact() {
     return (
@@ -13,7 +15,7 @@ function Contact() {
                 <p className="email">Email: madilynnwright@icloud.com</p>
                 <p className="linked">LinkedIn: <a href="https://www.linkedin.com/in/madilynn-wright/" target="_blank" rel="noopener noreferrer" className="contact-link"> www.linkedin.com/in/madilynn-wright</a></p>
                 <p className="git">GitHub: <a href="https://github.com/MaddieWright" target="_blank" rel="noopener noreferrer" className="contact-link"> https://github.com/MaddieWright</a></p>
-                <p className="resume"><a href="./src/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="contact-link">
+                <p className="resume"><a href={resume} target="_blank" rel="noopener noreferrer" className="contact-link">
                     Resume
                 </a></p>
             </div>
