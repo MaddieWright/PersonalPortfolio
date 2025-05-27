@@ -26,7 +26,7 @@ function About() {
 
             <div className="timeline-section">
                 <h2>How I Got Here</h2>
-                <div className="full-arrow-line">──────────────────────────────────────────────────────────────────────────→</div>
+                <div className="full-arrow-line">────────────────────────────────────────────────────────────────────→</div>
 
                 <div className="timeline-horizontal">
                     {[
