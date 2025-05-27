@@ -26,7 +26,7 @@ function Projects() {
                     </div>
 
                     <div className="star-wrapper">
-                        <span className="star">⭐</span>
+                        <span className="star">✦</span>
                         <div className="techstack-box">
                             <h4>Tech Stack</h4>
                             <ul>
@@ -55,7 +55,7 @@ function Projects() {
                     </div>
 
                     <div className="star-wrapper">
-                        <span className="star">⭐</span>
+                        <span className="star">✦</span>
                         <div className="techstack-box">
                             <h4>Tech Stack</h4>
                             <ul>
@@ -84,7 +84,7 @@ function Projects() {
                     </div>
 
                     <div className="star-wrapper">
-                        <span className="star">⭐</span>
+                        <span className="star">✦</span>
                         <div className="techstack-box">
                             <h4>Tech Stack</h4>
                             <ul>
