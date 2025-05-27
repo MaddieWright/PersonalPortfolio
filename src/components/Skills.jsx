@@ -1,5 +1,6 @@
 import React from 'react';
 import './Skills.css';
+import resume from '../assets/resume.pdf';
 
 const SkillsSection = () => {
     return (
@@ -8,7 +9,7 @@ const SkillsSection = () => {
                 <h2>Skills & Tech Stack</h2>
             </div>
             <div className="resume-button">
-                <a href="./src/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href={resume} target="_blank" rel="noopener noreferrer">
                     <button>Visit Resume</button>
                 </a>
             </div>
