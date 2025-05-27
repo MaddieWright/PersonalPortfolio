@@ -1,0 +1,25 @@
+body {
+    background-color: #45523E; 
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 100;
+    background-color: grey;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 30px;
+}
+
+button:hover {
+    background-color: #8E8A8A;
+    transform: translateY(-2px);
+}
