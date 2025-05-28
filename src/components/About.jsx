@@ -12,11 +12,13 @@ function About() {
 
                 <div className="intro-container">
                     <p className="bio">
-                        Hi, I’m Madilynn Wright from Toronto, currently studying a Combined Major in Science at UBC in Vancouver with a focus on Computer Science, Physics, and Earth and Ocean Sciences. I chose this path because I love exploring the intersections of technology and the natural world. I’m especially interested in projects that combine scientific insight with creative problem-solving—whether it's building tools for data analysis, contributing to meaningful software for nonprofits, or designing user experiences that make knowledge more accessible. I thrive in team environments where curiosity drives innovation and where every project leaves a lasting impact. I’m always eager to grow, collaborate, and create things that matter.
-                    </p>
+                        Hi, I’m Madilynn Wright! <br />
+                        I’m from Toronto and currently living in Vancouver, where I’m studying a Combined Major in Science at UBC, focusing on Computer Science, Physics, and Earth and Ocean Sciences. I’ve always been drawn to the ways technology and the natural world intersect, which is why I love working on projects that blend science, creativity, and real-world impact.
+                        <br />
+                        Whether I’m building data tools, contributing to nonprofit software, or designing user-friendly experiences, I’m most excited when I’m solving meaningful problems with a team. I enjoy collaborating with curious, driven people—and I’m always looking to learn, grow, and build things that actually make a difference.                    </p>
                     <p className="values">
                         <h4>My Values</h4>
-                        🔍 Curiosity – I seek out knowledge and ask thoughtful questions to deeply understand the world. <br />
+                        🔍 Curiosity – I love asking questions and digging deep to understand how things work. <br />
                         🌱 Growth – I embrace challenges as opportunities to improve, learn, and evolve. <br />
                         🤝 Collaboration – I believe diverse perspectives and open communication create the strongest solutions. <br />
                         🌎 Impact – I aim to work on projects that make a real difference in people’s lives or in the environment. <br />
