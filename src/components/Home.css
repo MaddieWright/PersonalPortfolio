@@ -1,9 +1,22 @@
 .head {
     color: white;
-    font-size: 95px;
+    font-size: 90px;
     font-weight: bold;
     margin-bottom: 1px;
 }
+
+@media (max-width: 768px) {
+    .head {
+      font-size: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .head {
+      font-size: 40px;
+    }
+  }
+  
 
 .sub-head {
     color: rgba(245, 245, 245, 0.714);

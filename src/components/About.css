@@ -82,12 +82,11 @@ h4 {
 }
 
 .full-arrow-line {
-    color: white;
-    font-size: 1.2rem;
-    text-align: center;
-    letter-spacing: -0.07rem;
-    font-weight: bolder;
-    height: 0px
+    width: 97%;
+    height: 2px;
+    background: linear-gradient(to right, white 100%, transparent);
+    position: relative;
+
 }
 
 .timeline-title {
