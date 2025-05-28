@@ -13,9 +13,9 @@ h4 {
 .intro-row {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center; 
     gap: 2rem;
-    flex-wrap: wrap; /* Optional: stacks on small screens */
+    flex-wrap: wrap; 
     padding: 2rem;
   }
   
@@ -68,7 +68,7 @@ h4 {
 
 .timeline-info {
     margin-top: 0.75rem;
-    background-color: #8E8A8A;
+    background-color: #aaa;
     padding: 0.75rem;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);

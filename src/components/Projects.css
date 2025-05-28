@@ -1,17 +1,15 @@
 .projects-section {
-    margin-top: 20px;;
-    margin-left: 40px;
+    padding: 10px 40px;
     color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .projects-container {
     margin-top: 50px;
-    margin-left: 65px;
     display: flex;
-    flex-wrap: wrap;          /* Wraps cards to new lines */
-    gap: 120px;                /* Adjust spacing between cards */
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center; 
 }
 
 
@@ -19,14 +17,6 @@ h3 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-}
-
-.scroll-container {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 30px;
-    scroll-snap-type: x mandatory;
 }
 
 .project-card {
@@ -92,19 +82,20 @@ h3 {
     right: 10px;
     display: flex;
     align-items: center;
-    gap: 8px; /* space between star and label */
+    gap: 8px;
+    /* space between star and label */
     cursor: pointer;
-  }
+}
 
-  .star {
+.star {
     font-size: 28px;
     transition: transform 0.2s ease, color 0.2s ease;
-  }
-  
-  .star:hover {
+}
+
+.star:hover {
     transform: scale(1.2);
     color: #FFD700;
-  }
+}
 
 .tech-label {
     font-size: 12px;
@@ -144,10 +135,8 @@ h3 {
     color: white;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .description-link:hover {
+}
+
+.description-link:hover {
     text-decoration: underline;
-  }
-  
-  
+}

@@ -8,15 +8,17 @@
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 40px;
+    font-size: 36px;
+
 }
 
 .skill-category {
-    background-color: #918b8b;
-    /* gray card color */
+    background-color: #aaa;
     border-radius: 20px;
     padding: 30px;
-    flex: 1;
-    min-width: 250px;
+    flex: 1 1 250px; 
+    max-width: 300px; 
+    box-sizing: border-box;
     margin: 15px;
 }
 
@@ -36,7 +38,6 @@
 
 .skill-item {
     background-color: #d3d1d1;
-    /* light gray */
     color: #1a1a1a;
     padding: 10px 14px;
     border-radius: 12px;
@@ -49,8 +50,10 @@
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px;
+    justify-content: center;
+    padding: 15px 10px;
+    box-sizing: border-box;
 }
 
 /* Responsive adjustments */
