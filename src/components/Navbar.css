@@ -25,10 +25,9 @@
   }
   
   .nav-links a:hover {
-    color: #8E8A8A;
+    color: #aaa;
   }
   
-  /* Hamburger hidden by default */
   .hamburger {
     display: none;
     font-size: 28px;
@@ -38,7 +37,6 @@
     cursor: pointer;
   }
   
-  /* Responsive behavior */
   @media (max-width: 768px) {
     .hamburger {
       display: block;

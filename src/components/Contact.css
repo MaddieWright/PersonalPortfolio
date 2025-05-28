@@ -25,13 +25,14 @@
 
 .contactlist {
     text-align: left;
-    margin: 50px auto 0 auto; /* Top margin, auto horizontal, 0 bottom */
-    background-color: #aaa;
+    margin: 50px auto 0 auto; 
+    background-color: #8E8A8A;
     padding: 30px;
     border-radius: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: fit-content;
-    max-width: 90%; /* ensures good sizing on small screens */
+    max-width: 90%; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 
