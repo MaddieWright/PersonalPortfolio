@@ -7,16 +7,16 @@
 
 @media (max-width: 768px) {
     .head {
-      font-size: 60px;
+        font-size: 60px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .head {
-      font-size: 60px;
+        font-size: 60px;
     }
-  }
-  
+}
+
 
 .sub-head {
     color: rgba(245, 245, 245, 0.714);
@@ -24,7 +24,7 @@
 }
 
 .main-container {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 button {
