@@ -2,12 +2,46 @@ import './Projects.css';
 import arc from '../assets/arc.jpeg';
 import lit from '../assets/litlog.png';
 import wine from '../assets/wine.png';
+import mint from '../assets/mint-logo.png';
 
 function Projects() {
     return (
         <div className="projects-section">
             <h3>Projects</h3>
             <div className="projects-container">
+                <div className="project-card">
+                    <div className="project-image">
+                        <img src={mint} alt="" className="image" />
+                    </div>
+                    <div className="project-info">
+                        <p className="projtitle">MINT Open Source System (MOSS)</p>
+                        <p className="year">2025 - Present</p>
+                        <p>An open source neurotech platform focused on building a brain data workspace where signals like EEG can be seamlessly processed, analyzed, and visualized across tools and platforms.
+                        </p>
+                        <a href="https://github.com/UBCMint/mint-frontend-product" target="_blank" rel="noopener noreferrer" className="description-link">
+                            Visit GitHub
+                        </a>
+                        <br></br><br></br>
+                        <a href="https://ubcmint.github.io/projects.html" target="_blank" rel="noopener noreferrer" className="description-link">
+                            Visit MINT page
+                        </a>
+                    </div>
+
+                    <div className="star-wrapper">
+                        <span className="star">✦</span>
+                        <span className="tech-label">Tech Stack</span>
+                        <div className="techstack-box">
+                            <h4>Tech Stack</h4>
+                            <ul>
+                                <li>Figma for collaborative UI design and layout planning</li>
+                                <li>TypeScript, JavaScript & CSS for building responsive, accessible interfaces</li>
+                                <li>React & React Flow for dynamic data visualization and user interaction</li>
+                                <li>GitHub for version control and collaborative development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="project-card">
                     <div className="project-image">
                         <img src={arc} alt="" className="image" />
@@ -34,7 +68,6 @@ function Projects() {
                                 <li>Figma for UI design, user flow mapping, and brand alignment</li>
                                 <li>HTML, CSS & JavaScript for a responsive, accessible frontend</li>
                                 <li>React for component structure and dynamic routing</li>
-                                <li>Node.js to simulate backend logic and local data handling</li>
                                 <li>Chrome Extension APIs for browser integration</li>
                                 <li>GitHub for version control and collaboration</li>
                             </ul>
@@ -64,7 +97,6 @@ function Projects() {
                                 <li>Developed using Java with a focus on object-oriented programming principles                                </li>
                                 <li>Designed a Swing GUI to provide a seamless and interactive user experience                                </li>
                                 <li>Used Visual Studio Code as the development environment                                </li>
-                                <li>Node.js to simulate backend logic and local data handling</li>
                                 <li>Employed GitHub for version control and collaboration                                </li>
                                 <li>Practiced project planning and documentation for long-term maintainability</li>
                             </ul>
@@ -94,7 +126,6 @@ function Projects() {
                                 <li>Developed using R, focusing on data preprocessing, analysis, and model implementation                                </li>
                                 <li>Utilized Jupyter Notebooks for interactive development and visualization     </li>
                                 <li>Implemented the K-Nearest Neighbors (KNN) algorithm to classify wine quality                </li>
-                                <li>Node.js to simulate backend logic and local data handling</li>
                                 <li>Used GitHub for version control and team collaboration          </li>
                                 <li>Practiced research design and communication to maximize accessibility and impact</li>
                             </ul>
