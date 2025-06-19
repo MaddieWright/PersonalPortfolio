@@ -22,6 +22,7 @@ const SkillsSection = () => {
                         <div className="skill-item">R</div>
                         <div className="skill-item">CSS</div>
                         <div className="skill-item">JavaScript</div>
+                        <div className="skill-item">TypeScript</div>
                         <div className="skill-item">C</div>
                         <div className="skill-item">HTML</div>
                         <div className="skill-item">Racket</div>
