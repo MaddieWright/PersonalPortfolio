@@ -16,12 +16,9 @@ function Projects() {
                     <div className="project-info">
                         <p className="projtitle">MINT Open Source System (MOSS)</p>
                         <p className="year">2025 - Present</p>
-                        <p>An open source neurotech platform focused on building a brain data workspace where signals like EEG can be seamlessly processed, analyzed, and visualized across tools and platforms.
+                        <p>Working frontend on an open source neurotech platform focused on building a brain data workspace where signals like EEG can be seamlessly processed, analyzed, and visualized across tools and platforms.
                         </p>
-                        <a href="https://github.com/UBCMint/mint-frontend-product" target="_blank" rel="noopener noreferrer" className="description-link">
-                            Visit GitHub
-                        </a>
-                        <br></br><br></br>
+                        <br></br>
                         <a href="https://ubcmint.github.io/projects.html" target="_blank" rel="noopener noreferrer" className="description-link">
                             Visit MINT page
                         </a>
