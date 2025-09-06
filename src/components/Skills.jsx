@@ -18,6 +18,7 @@ const SkillsSection = () => {
                     <h3>Languages</h3>
                     <div className="skill-items">
                         <div className="skill-item">Java</div>
+                        <div className="skill-item">C++</div>
                         <div className="skill-item">Python</div>
                         <div className="skill-item">R</div>
                         <div className="skill-item">CSS</div>
@@ -39,6 +40,7 @@ const SkillsSection = () => {
                         <div className="skill-item">Jupyter Notebook</div>
                         <div className="skill-item">Command Line/Terminal</div>
                         <div className="skill-item">R Studio</div>
+                        
                     </div>
                 </div>
 
@@ -46,6 +48,8 @@ const SkillsSection = () => {
                     <h3>Frameworks</h3>
                     <div className="skill-items">
                         <div className="skill-item">React</div>
+                        <div className="skill-item">React Flow</div>
+                        <div className="skill-item">Tailwind CSS</div>
                         <div className="skill-item">Node.js</div>
                         <div className="skill-item">Swing</div>
                         <div className="skill-item">JUnit</div>

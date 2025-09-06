@@ -60,16 +60,29 @@ function About() {
                                 "Started learning how design, storytelling, and user experience shape meaningful tools"],
                         },
                         {
-                            year: "2025",
+                            year: "Summer 2025",
                             title: "Growing Beyond the Classroom",
                             bullets: ["Began developing skills outside of coursework through personal projects, online learning, and exploring design and web dev",
                                 "Actively seeking opportunities to apply and grow—in research, internships, and team-based builds that align with my values"],
                         },
                         {
+                            year: "2025–2026 School Year",
+                            title: "Leadership & Growth in Development",
+                            bullets: [
+                                "Began as a frontend developer on UBC MINT's MOSS project over the summer",
+                                "Promoted to frontend team lead on MOSS!",
+                                "Joined UBC GIS and UBC Startups as a developer, building websites and interactive tools",
+                                "Excited to engage in extracurriculars, meet new people, and further develop collaboration and dev skills",
+                            ],
+                        },
+                        {
                             year: "Looking Ahead...",
                             title: "",
-                            bullets: ["I’m excited to keep growing as a developer and creator—especially where technology, science, and human-centered design overlap."],
+                            bullets: ["Exploring machine learning and setting ambitious goals for personal and professional growth",
+                                "I’m excited to keep growing as a developer and creator—especially where technology, science, and human-centered design overlap!",
+                            ],
                         },
+
                     ].map((event, index) => (
                         <div key={index} className="timeline-item">
                             <div className="timeline-marker">|</div>
