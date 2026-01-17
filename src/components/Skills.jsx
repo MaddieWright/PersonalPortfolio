@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css';
-import resume from '../assets/resume.pdf';
+import resume from '../assets/CoOp_Resume-4.pdf';
 
 const SkillsSection = () => {
     return (

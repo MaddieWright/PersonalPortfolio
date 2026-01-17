@@ -10,7 +10,7 @@ function Home() {
         <div>
             <div className='main-container'>
                 <p className='head'>Hi, I'm Madilynn Wright</p>
-                <p className='sub-head'>Aspiring Developer | Combined Major in Science @ UBC</p>
+                <p className='sub-head'>Aspiring Developer | Studying Computer Science in CMS @ UBC</p>
                 <p className='sub-head'>Driven by curiosity. Guided by values. Built with purpose.</p>
 
                 <div className="button-group">
