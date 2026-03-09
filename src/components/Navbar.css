@@ -5,6 +5,7 @@
     padding: 1rem 2rem;
     color: white;
     position: relative;
+    z-index: 1000;
 }
 
 .logo img {
@@ -63,11 +64,13 @@
         top: 100%;
         right: 0;
         flex-direction: column;
-        background-color: #45523E;
+        background-color: #2d3827;
         width: 100%;
         display: none;
         padding: 1rem 0;
         gap: 1rem;
+        z-index: 999;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
 
     .nav-links.open {

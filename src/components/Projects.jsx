@@ -34,7 +34,7 @@ function Projects() {
                             <ul>
                                 <li>Next.js for frontend and backend</li>
                                 <li>Frontend specific: React + Vite, Tailwind CSS, Framer Motion</li>
-                                <li>The evaluation system is powered by Claude Haiku</li>
+                                <li>Use of Anthropic Claude API - the evaluation system is powered by Claude Haiku</li>
                                 <li>Deployed on Vercel</li>
                                 <li>GitHub for version control and collaborative development</li>
                             </ul>

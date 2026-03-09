@@ -47,4 +47,14 @@ button {
 .button-group {
     margin-top: 10px;
     animation: fadeInUp 0.8s ease 0.4s both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .button-group button {
+        margin-right: 0;
+    }
 }
