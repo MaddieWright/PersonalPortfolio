@@ -1,25 +1,51 @@
+html {
+    min-height: 100%;
+    background: linear-gradient(to bottom,
+        #2d3827 0%,
+        #3b4735 20%,
+        #45523E 40%,
+        #4a5841 60%,
+        #3d4a36 80%,
+        #2d3827 100%
+    );
+}
+
 body {
-    background-color: #45523E;
+    min-height: 100%;
     margin: 0;
     padding: 0;
+    background: transparent;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 button {
-    padding: 12px 24px;
+    padding: 12px 28px;
     font-size: 16px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-weight: 100;
+    transition: background-color 0.3s, transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
     background-color: #8E8A8A;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-right: 30px;
+    letter-spacing: 0.03em;
 }
 
 button:hover {
-    background-color: #aaa;
-    transform: translateY(-2px);
+    background-color: #a3a0a0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }

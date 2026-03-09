@@ -1,8 +1,20 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .head {
     color: white;
     font-size: 90px;
     font-weight: bold;
     margin-bottom: 1px;
+    animation: fadeInUp 0.8s ease forwards;
 }
 
 @media (max-width: 768px) {
@@ -21,6 +33,7 @@
 .sub-head {
     color: rgba(245, 245, 245, 0.714);
     font-size: 20px;
+    animation: fadeInUp 0.8s ease 0.2s both;
 }
 
 .main-container {
@@ -29,4 +42,9 @@
 
 button {
     margin-top: 15px;
+}
+
+.button-group {
+    margin-top: 10px;
+    animation: fadeInUp 0.8s ease 0.4s both;
 }

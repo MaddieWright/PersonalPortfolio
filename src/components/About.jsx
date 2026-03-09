@@ -1,11 +1,28 @@
 import './About.css';
 import me from '../assets/me2.jpeg';
+import { useRef, useEffect } from 'react';
 
 function About() {
+    const timelineRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.1 }
+        );
+        if (timelineRef.current) observer.observe(timelineRef.current);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className="about-section">
             <h2>Get to know me more...</h2>
-            <div className="intro-row">
+            <div className="intro-row reveal">
                 <div className="myself-image">
                     <img src={me} alt="" className="image" />
                 </div>
@@ -29,7 +46,7 @@ function About() {
             <div className="timeline-section">
                 <h2>How I Got Here</h2>
                 <div className="full-arrow-line"></div>
-                <div className="timeline-horizontal">
+                <div className="timeline-horizontal" ref={timelineRef}>
                     {[
                         {
                             year: "2019",
@@ -84,7 +101,7 @@ function About() {
                         },
 
                     ].map((event, index) => (
-                        <div key={index} className="timeline-item">
+                        <div key={index} className="timeline-item" style={{ animationDelay: `${index * 0.15}s` }}>
                             <div className="timeline-marker">|</div>
                             <div className="timeline-info">
                                 <span className="timeline-year">{event.year}</span>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css';
-import resume from '../assets/CoOp_Resume-4.pdf';
+import resume from '../assets/resume.pdf';
 
 const SkillsSection = () => {
     return (
@@ -14,7 +14,7 @@ const SkillsSection = () => {
                 </a>
             </div>
             <div className="skills-grid">
-                <div className="skill-category">
+                <div className="skill-category reveal">
                     <h3>Languages</h3>
                     <div className="skill-items">
                         <div className="skill-item">Java</div>
@@ -31,7 +31,7 @@ const SkillsSection = () => {
                     </div>
                 </div>
 
-                <div className="skill-category">
+                <div className="skill-category reveal">
                     <h3>Tools & Platforms</h3>
                     <div className="skill-items">
                         <div className="skill-item">Figma</div>
@@ -44,7 +44,7 @@ const SkillsSection = () => {
                     </div>
                 </div>
 
-                <div className="skill-category">
+                <div className="skill-category reveal">
                     <h3>Frameworks</h3>
                     <div className="skill-items">
                         <div className="skill-item">React</div>
@@ -56,7 +56,7 @@ const SkillsSection = () => {
                     </div>
                 </div>
 
-                <div className="skill-category">
+                <div className="skill-category reveal">
                     <h3>Soft</h3>
                     <div className="skill-items">
                         <div className="skill-item">Problem-solving</div>

@@ -11,7 +11,7 @@ function Contact() {
                 <li>Based in Vancouver, BC | Toronto, ON</li>
                 <li>Currently open to internships & collaborative projects</li>
             </ul>
-            <div className="contactlist">
+            <div className="contactlist reveal">
                 <p className="email">Email: madilynnwright@icloud.com</p>
                 <p className="linked">LinkedIn: <a href="https://www.linkedin.com/in/madilynn-wright/" target="_blank" rel="noopener noreferrer" className="contact-link"> www.linkedin.com/in/madilynn-wright</a></p>
                 <p className="git">GitHub: <a href="https://github.com/MaddieWright" target="_blank" rel="noopener noreferrer" className="contact-link"> https://github.com/MaddieWright</a></p>
