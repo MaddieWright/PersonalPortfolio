@@ -4,12 +4,43 @@ import lit from '../assets/litlog.png';
 import wine from '../assets/wine.png';
 import mint from '../assets/mint-logo.png';
 import stack from '../assets/stack-or-crack.jpeg';
+import relinkd from '../assets/relinkd.png';
 
 function Projects() {
     return (
         <div className="projects-section">
             <h3>Projects</h3>
             <div className="projects-container">
+                <div className="project-card reveal">
+                    <div className="project-image">
+                        <img src={relinkd} alt="" className="image" />
+                    </div>
+                    <div className="project-info">
+                        <p className="projtitle">Relinkd</p>
+                        <p className="year">2026</p>
+                        <p>An end-to-end volunteer recruitment platform for nonprofits. Uses AI to match volunteers by skills, availability, and location — then streamlines outreach via SMS with a live pipeline tracker and analytics.</p>
+                        <div className="project-links">
+                            <a href="https://github.com/ssamiaa/youcode26" target="_blank" rel="noopener noreferrer" className="description-link">GitHub</a>
+                            <a href="https://devpost.com/software/relinkd" target="_blank" rel="noopener noreferrer" className="description-link">DevPost</a>
+                        </div>
+                    </div>
+                    <div className="star-wrapper">
+                        <span className="star">✦</span>
+                        <span className="tech-label">Tech Stack</span>
+                        <div className="techstack-box">
+                            <h4>Tech Stack</h4>
+                            <ul>
+                                <li>React, TypeScript & Vite for the frontend</li>
+                                <li>Tailwind CSS for styling</li>
+                                <li>Express.js (Node.js) for the backend</li>
+                                <li>Supabase (PostgreSQL) for database management</li>
+                                <li>Claude Haiku (Anthropic) for AI chat and matching</li>
+                                <li>Twilio for SMS integration</li>
+                                <li>Cloudinary for media storage and Pexels API for high-quality imagery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div className="project-card reveal">
                     <div className="project-image">
                         <img src={stack} alt="" className="image" />
