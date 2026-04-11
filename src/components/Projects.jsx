@@ -5,6 +5,8 @@ import wine from '../assets/wine.png';
 import mint from '../assets/mint-logo.png';
 import stack from '../assets/stack-or-crack.jpeg';
 import relinkd from '../assets/relinkd.png';
+import startups from '../assets/startups.png';
+import gis from '../assets/gis-icon.png';
 
 function Projects() {
     return (
@@ -125,6 +127,59 @@ function Projects() {
                                 <li>HTML, CSS & JavaScript for a responsive, accessible frontend</li>
                                 <li>React for component structure and dynamic routing</li>
                                 <li>Chrome Extension APIs for browser integration</li>
+                                <li>GitHub for version control and collaboration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="project-card reveal">
+                    <div className="project-image project-image-white">
+                        <img src={startups} alt="" className="image" />
+                    </div>
+                    <div className="project-info">
+                        <p className="projtitle">UBC Startups</p>
+                        <p className="year">2025 - 2026</p>
+                        <p>The official website for UBC Startups, a club connecting student entrepreneurs and builders at UBC. Built and maintained as a software developer on the team, featuring club resources, events, and team information.</p>
+                        <div className="project-links">
+                            <a href="https://ubcstartups.com" target="_blank" rel="noopener noreferrer" className="description-link">Live Site</a>
+                        </div>
+                    </div>
+                    <div className="star-wrapper">
+                        <span className="star">✦</span>
+                        <span className="tech-label">Tech Stack</span>
+                        <div className="techstack-box">
+                            <h4>Tech Stack</h4>
+                            <ul>
+                                <li>React & JavaScript for building an interactive, component-based UI</li>
+                                <li>GitHub Pages for deployment and hosting</li>
+                                <li>GitHub for version control and collaborative development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="project-card reveal">
+                    <div className="project-image">
+                        <img src={gis} alt="" className="image" />
+                    </div>
+                    <div className="project-info">
+                        <p className="projtitle">GIS InnovateHer</p>
+                        <p className="year">2025 - 2026</p>
+                        <p>The official website for GIS InnovateHer, a club empowering women and non-binary students in geospatial and tech fields. Contributed as a web developer, building out the platform to showcase events, initiatives, and community resources.</p>
+                        <div className="project-links">
+                            <a href="https://innovateher2026.vercel.app" target="_blank" rel="noopener noreferrer" className="description-link">Live Site</a>
+                        </div>
+                    </div>
+                    <div className="star-wrapper">
+                        <span className="star">✦</span>
+                        <span className="tech-label">Tech Stack</span>
+                        <div className="techstack-box">
+                            <h4>Tech Stack</h4>
+                            <ul>
+                                <li>React & JavaScript for a dynamic, component-driven frontend</li>
+                                <li>CSS for custom styling and responsive layouts</li>
+                                <li>Deployed on Vercel for seamless continuous deployment</li>
                                 <li>GitHub for version control and collaboration</li>
                             </ul>
                         </div>
