@@ -36,8 +36,32 @@
     animation: fadeInUp 0.8s ease 0.2s both;
 }
 
+.rotating-role {
+    display: inline-block;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.rotating-role.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.rotating-role.fade-out {
+    opacity: 0;
+    transform: translateY(-6px);
+}
+
 .main-container {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sections-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-bottom: 60px;
 }
 
 button {

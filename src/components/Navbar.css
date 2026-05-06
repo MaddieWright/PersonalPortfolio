@@ -41,6 +41,15 @@
     width: 100%;
 }
 
+.nav-links a.nav-active::after {
+    width: 100%;
+}
+
+.nav-links a.nav-active {
+    color: white;
+    font-weight: 600;
+}
+
 .nav-links a:hover {
     color: rgba(255, 255, 255, 0.85);
 }

@@ -4,13 +4,40 @@ import About from './About'
 import Skills from './Skills'
 import Contact from './Contact'
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
+const roles = [
+    'Developer',
+    'Problem Solver',
+    'Builder',
+    'Leader',
+    'CS + PHYS Student @ UBC',
+];
 
 function Home() {
+    const [roleIndex, setRoleIndex] = useState(0);
+    const [fade, setFade] = useState(true);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFade(false);
+            setTimeout(() => {
+                setRoleIndex(i => (i + 1) % roles.length);
+                setFade(true);
+            }, 400);
+        }, 2500);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div>
             <div className='main-container'>
                 <p className='head'>Hi, I'm Madilynn Wright</p>
-                <p className='sub-head'>Aspiring Developer | Studying Computer Science in CMS @ UBC</p>
+                <p className='sub-head'>
+                    <span className={`rotating-role ${fade ? 'fade-in' : 'fade-out'}`}>
+                        {roles[roleIndex]}
+                    </span>
+                </p>
                 <p className='sub-head'>Driven by curiosity. Guided by values. Built with purpose.</p>
 
                 <div className="button-group">
@@ -22,20 +49,11 @@ function Home() {
                     </Link>
                 </div>
             </div>
-            <div>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
+            <div className="sections-wrapper">
                 <About />
                 <Projects />
-                <br></br>
-                <br></br>
                 <Skills />
                 <Contact />
-                <br></br>
-                <br></br>
             </div>
         </div>
     );

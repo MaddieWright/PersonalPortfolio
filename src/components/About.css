@@ -3,7 +3,7 @@
     font-family: 'Inter', sans-serif;
     margin-top: 20px;
     margin-left: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 0;
 }
 
 .about-section h2,
@@ -38,7 +38,41 @@ h4 {
 }
 
 .values h4 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.values-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.values-list li .value-icon {
+    margin-top: 0.2rem;
+}
+
+.value-icon {
+    flex-shrink: 0;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.value-arrow {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-top: 0.2rem;
 }
 
 .timeline-horizontal {

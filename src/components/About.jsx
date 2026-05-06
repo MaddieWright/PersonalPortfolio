@@ -1,6 +1,7 @@
 import './About.css';
 import me from '../assets/me2.jpeg';
 import { useRef, useEffect } from 'react';
+import { FiSearch, FiTrendingUp, FiUsers, FiGlobe, FiArrowRight } from 'react-icons/fi';
 
 function About() {
     const timelineRef = useRef(null);
@@ -29,17 +30,20 @@ function About() {
 
                 <div className="intro-container">
                     <p className="bio">
-                        Hi, I’m Madilynn Wright! <br />
-                        I’m from Toronto and currently living in Vancouver, where I’m studying Computer Science as a Combined Major in Science student at UBC. I’ve always been drawn to the ways technology and the natural world intersect, which is why I love working on projects that blend science, creativity, and real-world impact.
+                        Hi, I'm Madilynn Wright! <br />
+                        I'm originally from Toronto and now living in Vancouver, studying Computer Science as a Combined Major in Science student at UBC. I've always been drawn to the intersection of technology and the natural world, which is why I find myself gravitating toward projects that mix science, creativity, and something that actually matters.
                         <br />
-                        Whether I’m building data tools, contributing to nonprofit software, or designing user-friendly experiences, I’m most excited when I’m solving meaningful problems with a team. I enjoy collaborating with curious, driven people—and I’m always looking to learn, grow, and build things that actually make a difference.                    </p>
-                    <p className="values">
-                        <h4>My Values</h4>
-                        🔍 Curiosity – I love asking questions and digging deep to understand how things work. <br />
-                        🌱 Growth – I embrace challenges as opportunities to improve, learn, and evolve. <br />
-                        🤝 Collaboration – I believe diverse perspectives and open communication create the strongest solutions. <br />
-                        🌎 Impact – I aim to work on projects that make a real difference in people’s lives or in the environment. <br />
+                        I do my best work with a team. Whether that's building data tools, contributing to nonprofit software, or figuring out how to make something feel intuitive and useful, I like solving problems that are worth solving. I'm always looking to learn, and I care a lot about the people I build things with and the people I build things for.
                     </p>
+                    <div className="values">
+                        <h4>My Values</h4>
+                        <ul className="values-list">
+                            <li><FiSearch className="value-icon" /> <strong>Curiosity</strong> <FiArrowRight className="value-arrow" /> I like asking questions and actually digging into the answers.</li>
+                            <li><FiTrendingUp className="value-icon" /> <strong>Growth</strong> <FiArrowRight className="value-arrow" /> I try to treat challenges as chances to get better, not just get through it.</li>
+                            <li><FiUsers className="value-icon" /> <strong>Collaboration</strong> <FiArrowRight className="value-arrow" /> I genuinely believe different perspectives make the work stronger.</li>
+                            <li><FiGlobe className="value-icon" /> <strong>Impact</strong> <FiArrowRight className="value-arrow" /> I want what I build to matter, whether that's to a user, a community, or the planet.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -64,40 +68,63 @@ function About() {
                         {
                             year: "2023-2024",
                             title: "First University Projects & Involvement",
-                            bullets: ["Made my first data model",
+                            bullets: [
+                                "Built my first data model",
                                 "Built my first full solo Java application",
-                                "Started volunteering for club hackathons",
-                                "Started combining science & software in my coursework and personal interests"],
+                                "Started volunteering at club hackathons",
+                                "Started finding ways to mix science and software in both coursework and personal projects",
+                            ],
                         },
                         {
                             year: "2024-2025",
                             title: "Hackathons, Team Projects, & Frontend Exploration",
-                            bullets: ["Participated in my first hackathon",
-                                "Started gaining curiosity for frontend development and explored it through development of side projects",
-                                "Started learning how design, storytelling, and user experience shape meaningful tools"],
+                            bullets: [
+                                "Did my first hackathon",
+                                "Got curious about frontend and started exploring it through side projects",
+                                "Started paying attention to how design and storytelling shape the way people use tools",
+                            ],
                         },
                         {
                             year: "Summer 2025",
                             title: "Growing Beyond the Classroom",
-                            bullets: ["Began developing skills outside of coursework through personal projects, online learning, and exploring design and web dev",
-                                "Actively seeking opportunities to apply and grow—in research, internships, and team-based builds that align with my values"],
+                            bullets: [
+                                "Started building skills outside of class through personal projects, online learning, and diving into design and web dev",
+                                "Looked for opportunities to actually apply what I was learning, in research, internships, and team projects that felt meaningful",
+                            ],
                         },
                         {
-                            year: "2025–2026 School Year",
+                            year: "2025-2026 School Year",
                             title: "Leadership & Growth in Development",
                             bullets: [
-                                "Began as a frontend developer on UBC MINT's MOSS project over the summer",
-                                "Promoted to frontend team lead on MOSS!",
-                                "Joined UBC GIS and UBC Startups as a developer, building websites and interactive tools",
-                                "Excited to engage in extracurriculars, meet new people, and further develop collaboration and dev skills",
+                                "Started as a frontend developer on UBC MINT's MOSS project",
+                                "Got promoted to frontend team lead on MOSS!",
+                                "Joined UBC GIS and UBC Startups as a developer, building out their websites",
+                                "Threw myself into extracurriculars, met a lot of great people, and kept pushing my skills",
                             ],
                         },
                         {
-                            year: "Looking Ahead...",
+                            year: "Looking Ahead into 2026...",
                             title: "",
-                            bullets: ["Exploring machine learning and setting ambitious goals for personal and professional growth",
-                                "I’m excited to keep growing as a developer and creator—especially where technology, science, and human-centered design overlap!",
+                            bullets: [
+                                "Getting into machine learning and setting bigger goals for where I want to go",
+                                "Excited to keep growing as a developer, especially where tech, science, and design all meet",
                             ],
+                        },
+                        {
+                            year: "May 2026",
+                            title: "First Co-op, New Role & First Vancouver Summer",
+                            bullets: [
+                                "Starting my first co-op as an AI Developer at Ideon Technologies, really excited to bring what I know into a real professional setting",
+                                "Got elected Co-President of UBC Startups, stepping into a leadership role I feel genuinely excited about",
+                                "Still going deep on ML through two active projects, coursework, and a lot of personal reading and tinkering",
+                                "With everything happening at once, I feel more motivated than ever to keep exploring and building",
+                                "And very excited for my first real Vancouver summer ☀️",
+                            ],
+                        },
+                        {
+                            year: "Stay Tuned...",
+                            title: "",
+                            bullets: [],
                         },
 
                     ].map((event, index) => (
