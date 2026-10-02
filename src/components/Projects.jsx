@@ -36,7 +36,7 @@ const projects = [
     },
     {
         title: 'Stack or Crack',
-        year: '2026 - Present',
+        year: '2026',
         category: 'Hackathon',
         image: stack,
         imageClass: '',
@@ -72,13 +72,14 @@ const projects = [
     },
     {
         title: 'MINT Open Source System (MOSS)',
-        year: '2025 - Present',
+        year: '2025 - 2026',
         category: 'Open Source',
         image: mint,
         imageClass: '',
         description: 'An open source neurotech platform for working with brain data. The goal is to make it easier to process, analyze, and visualize signals like EEG across different tools and platforms, all in one workspace.',
         links: [
             { label: 'MINT page', href: 'https://ubcmint.github.io/projects.html' },
+            { label: 'Demo', href: 'https://drive.google.com/file/d/1UwG-lv-a2kgATWCs6lAe7t_Vr5HInd25/view?usp=sharing' },
         ],
         tech: [
             'Figma for collaborative UI design and layout planning',

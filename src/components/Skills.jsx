@@ -37,6 +37,7 @@ const SkillsSection = () => {
                         <div className="skill-item">Figma</div>
                         <div className="skill-item">Git & GitHub</div>
                         <div className="skill-item">VSCode</div>
+                        <div className="skill-item">Azure Machine Learning</div>
                         <div className="skill-item">Jupyter Notebook</div>
                         <div className="skill-item">Command Line/Terminal</div>
                         <div className="skill-item">R Studio</div>
@@ -47,6 +48,7 @@ const SkillsSection = () => {
                 <div className="skill-category reveal">
                     <h3>Frameworks</h3>
                     <div className="skill-items">
+                        <div className="skill-item">JAX</div>
                         <div className="skill-item">React</div>
                         <div className="skill-item">React Flow</div>
                         <div className="skill-item">Tailwind CSS</div>

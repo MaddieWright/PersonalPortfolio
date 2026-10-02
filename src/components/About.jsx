@@ -31,7 +31,7 @@ function About() {
                 <div className="intro-container">
                     <p className="bio">
                         Hi, I'm Madilynn Wright! <br />
-                        I'm originally from Toronto and now living in Vancouver, studying Computer Science as a Combined Major in Science student at UBC. I've always been drawn to the intersection of technology and the natural world, which is why I find myself gravitating toward projects that mix science, creativity, and something that actually matters.
+                        I'm originally from Toronto and now living in Vancouver, studying Computer Science and Physics as a Combined Major in Science student at UBC. I've always been drawn to the intersection of technology and the natural world, which is why I find myself gravitating toward projects that mix science, creativity, and something that actually matters.
                         <br />
                         I do my best work with a team. Whether that's building data tools, contributing to nonprofit software, or figuring out how to make something feel intuitive and useful, I like solving problems that are worth solving. I'm always looking to learn, and I care a lot about the people I build things with and the people I build things for.
                     </p>
@@ -119,6 +119,15 @@ function About() {
                                 "Still going deep on ML through two active projects, coursework, and a lot of personal reading and tinkering",
                                 "With everything happening at once, I feel more motivated than ever to keep exploring and building",
                                 "And very excited for my first real Vancouver summer ☀️",
+                            ],
+                        },
+                        {
+                            year: "September 2026",
+                            title: "A New Chapter in Vancouver",
+                            bullets: [
+                                "Settled into my AI Developer co-op at Ideon Technologies (extended summer contract), working on AI/ML projects and getting to see what it looks like to apply research and experimentation in a real-world setting",
+                                "Started my fourth year at UBC while balancing co-op, coursework, and everything else happening outside the classroom",
+                                "Officially stepped into my role as Co-President of UBC Startups, working with an amazing team to build out our plans for the year",
                             ],
                         },
                         {
