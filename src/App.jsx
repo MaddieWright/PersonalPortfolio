@@ -12,6 +12,8 @@ function AppContent() {
     const location = useLocation();
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach(entry => {
@@ -59,13 +61,15 @@ function AppContent() {
             <div className="scroll-progress-bar" style={{ width: `${scrollProgress}%` }} />
             <div className="spotlight" />
             <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/skills" element={<Skills />} />
-                <Route path="/contact" element={<Contact />} />
-            </Routes>
+            <div className="page-content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/skills" element={<Skills />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </div>
         </>
     );
 }

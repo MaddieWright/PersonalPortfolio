@@ -56,6 +56,10 @@ body {
     transform: translateY(0);
 }
 
+.page-content {
+    padding-bottom: 80px;
+}
+
 button {
     padding: 12px 28px;
     font-size: 16px;
