@@ -14,9 +14,12 @@ const roles = [
     'CS + PHYS Student @ UBC',
 ];
 
+const TAGLINE = 'Driven by curiosity. Guided by values. Built with purpose.';
+
 function Home() {
     const [roleIndex, setRoleIndex] = useState(0);
     const [fade, setFade] = useState(true);
+    const [typedTagline, setTypedTagline] = useState('');
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -29,6 +32,16 @@ function Home() {
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+        let i = 0;
+        const timer = setInterval(() => {
+            setTypedTagline(TAGLINE.slice(0, i + 1));
+            i++;
+            if (i >= TAGLINE.length) clearInterval(timer);
+        }, 40);
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <div>
             <div className='main-container'>
@@ -38,7 +51,7 @@ function Home() {
                         {roles[roleIndex]}
                     </span>
                 </p>
-                <p className='sub-head'>Driven by curiosity. Guided by values. Built with purpose.</p>
+                <p className='sub-head typewriter'>{typedTagline}</p>
 
                 <div className="button-group">
                     <Link to="/projects">

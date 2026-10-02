@@ -36,6 +36,22 @@
     animation: fadeInUp 0.8s ease 0.2s both;
 }
 
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.typewriter {
+    animation: none;
+    opacity: 1;
+}
+
+.typewriter::after {
+    content: '|';
+    margin-left: 2px;
+    animation: blink 0.8s step-start infinite;
+}
+
 .rotating-role {
     display: inline-block;
     font-weight: 600;
