@@ -1,10 +1,15 @@
 import './About.css';
 import me from '../assets/me2.jpeg';
-import { useRef, useEffect } from 'react';
-import { FiSearch, FiTrendingUp, FiUsers, FiGlobe, FiArrowRight } from 'react-icons/fi';
+import { useRef, useEffect, useState } from 'react';
+import { FiSearch, FiTrendingUp, FiUsers, FiGlobe, FiArrowRight, FiChevronDown } from 'react-icons/fi';
 
 function About() {
     const timelineRef = useRef(null);
+    const [expandedIndex, setExpandedIndex] = useState(null);
+
+    const toggleExpand = (index) => {
+        setExpandedIndex(prev => prev === index ? null : index);
+    };
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -136,20 +141,34 @@ function About() {
                             ],
                         },
 
-                    ].map((event, index) => (
-                        <div key={index} className="timeline-item" style={{ animationDelay: `${index * 0.15}s` }}>
-                            <div className="timeline-marker">|</div>
-                            <div className="timeline-info">
-                                <span className="timeline-year">{event.year}</span>
-                                <h4 className="timeline-title">{event.title}</h4>
-                                <ul className="timeline-bullets">
-                                    {event.bullets.map((point, i) => (
-                                        <li key={i}>{point}</li>
-                                    ))}
-                                </ul>
+                    ].map((event, index) => {
+                        const isExpanded = expandedIndex === index;
+                        const hasBullets = event.bullets.length > 0;
+                        return (
+                            <div key={index} className="timeline-item" style={{ animationDelay: `${index * 0.15}s` }}>
+                                <div className="timeline-marker">|</div>
+                                <div
+                                    className={`timeline-info ${hasBullets ? 'timeline-info-clickable' : ''}`}
+                                    onClick={() => hasBullets && toggleExpand(index)}
+                                >
+                                    <span className="timeline-year">{event.year}</span>
+                                    <h4 className="timeline-title">{event.title}</h4>
+                                    {hasBullets && (
+                                        <div className={`timeline-chevron ${isExpanded ? 'timeline-chevron-open' : ''}`}>
+                                            <FiChevronDown />
+                                        </div>
+                                    )}
+                                    <div className={`timeline-bullets-wrapper ${isExpanded ? 'timeline-bullets-open' : ''}`}>
+                                        <ul className="timeline-bullets">
+                                            {event.bullets.map((point, i) => (
+                                                <li key={i}>{point}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
 
