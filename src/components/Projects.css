@@ -135,23 +135,34 @@ h3 {
     padding: 0 16px 16px;
 }
 
-.project-card:hover .tech-drawer,
 .tech-drawer.tech-drawer-open {
     transform: translateY(0);
-}
-
-.tech-drawer-tab {
-    cursor: pointer;
 }
 
 .tech-drawer-tab {
     height: 36px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 6px;
     font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    opacity: 0.85;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    transition: background 0.2s ease, opacity 0.2s ease;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.tech-drawer-tab::before {
+    content: '▲';
+    font-size: 9px;
+    transition: transform 0.3s ease;
+}
+
+.tech-drawer-open .tech-drawer-tab::before {
+    transform: rotate(180deg);
 }
 
 .tech-drawer-list {
