@@ -1,3 +1,21 @@
+:root {
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+}
+
+.spotlight {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(
+        400px circle at var(--mouse-x) var(--mouse-y),
+        rgba(160, 185, 140, 0.18),
+        transparent 70%
+    );
+    transition: background 0.05s ease;
+}
+
 html {
     min-height: 100%;
     background: linear-gradient(to bottom,
