@@ -180,6 +180,7 @@ const projects = [
 
 function Projects() {
     const [active, setActive] = useState('All');
+    const [openDrawer, setOpenDrawer] = useState(null);
     const sectionRef = useRef(null);
     const containerRef = useRef(null);
 
@@ -241,17 +242,18 @@ function Projects() {
                                 ))}
                             </div>
                         </div>
-                        <div className="star-wrapper">
-                            <span className="star">✦</span>
-                            <span className="tech-label">Tech Stack</span>
-                            <div className="techstack-box">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    {project.tech.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))}
-                                </ul>
+                        <div className={`tech-drawer ${openDrawer === index ? 'tech-drawer-open' : ''}`}>
+                            <div
+                                className="tech-drawer-tab"
+                                onClick={() => setOpenDrawer(prev => prev === index ? null : index)}
+                            >
+                                Tech Stack ✦
                             </div>
+                            <ul className="tech-drawer-list">
+                                {project.tech.map((item, i) => (
+                                    <li key={i}>{item}</li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 ))}
