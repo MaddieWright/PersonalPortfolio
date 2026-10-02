@@ -27,6 +27,15 @@ h4 {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.tilt-img {
+    will-change: transform;
+    cursor: default;
+}
+
+.tilt-img:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
 .intro-container {
     max-width: 600px;
     color: white;

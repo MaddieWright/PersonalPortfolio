@@ -11,6 +11,25 @@ function About() {
         setExpandedIndex(prev => prev === index ? null : index);
     };
 
+    const imgRef = useRef(null);
+
+    const handleTiltMove = (e) => {
+        const el = imgRef.current;
+        if (!el) return;
+        el.style.transition = 'box-shadow 0.15s ease';
+        const { left, top, width, height } = el.getBoundingClientRect();
+        const x = (e.clientX - left) / width - 0.5;
+        const y = (e.clientY - top) / height - 0.5;
+        el.style.transform = `perspective(600px) rotateY(${x * 16}deg) rotateX(${-y * 16}deg) scale(1.03)`;
+    };
+
+    const handleTiltLeave = () => {
+        const el = imgRef.current;
+        if (!el) return;
+        el.style.transition = 'transform 0.4s ease, box-shadow 0.4s ease';
+        el.style.transform = '';
+    };
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -30,7 +49,14 @@ function About() {
             <h2>Get to know me more...</h2>
             <div className="intro-row reveal">
                 <div className="myself-image">
-                    <img src={me} alt="" className="image" />
+                    <img
+                        src={me}
+                        alt=""
+                        className="image tilt-img"
+                        ref={imgRef}
+                        onMouseMove={handleTiltMove}
+                        onMouseLeave={handleTiltLeave}
+                    />
                 </div>
 
                 <div className="intro-container">
