@@ -41,6 +41,7 @@ function Navbar() {
 
     return (
         <header className="navbar">
+            {menuOpen && <div className="nav-overlay" onClick={closeMenu} />}
             <Link to="/" className="logo" onClick={closeMenu}>
                 <img src={logo} alt="logo" />
             </Link>
