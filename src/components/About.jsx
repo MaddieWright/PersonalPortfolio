@@ -5,6 +5,7 @@ import { FiSearch, FiTrendingUp, FiUsers, FiGlobe, FiArrowRight, FiChevronDown }
 
 function About() {
     const timelineRef = useRef(null);
+    const valuesRef = useRef(null);
     const [expandedIndex, setExpandedIndex] = useState(null);
 
     const toggleExpand = (index) => {
@@ -44,6 +45,22 @@ function About() {
         return () => observer.disconnect();
     }, []);
 
+    useEffect(() => {
+        const el = valuesRef.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    el.classList.add('values-visible');
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.2 }
+        );
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className="about-section" id="about">
             <h2>Get to know me more...</h2>
@@ -66,7 +83,7 @@ function About() {
                         <br />
                         I do my best work with a team. Whether that's building data tools, contributing to nonprofit software, or figuring out how to make something feel intuitive and useful, I like solving problems that are worth solving. I'm always looking to learn, and I care a lot about the people I build things with and the people I build things for.
                     </p>
-                    <div className="values">
+                    <div className="values" ref={valuesRef}>
                         <h4>My Values</h4>
                         <ul className="values-list">
                             <li><FiSearch className="value-icon" /> <strong>Curiosity</strong> <FiArrowRight className="value-arrow" /> I like asking questions and actually digging into the answers.</li>
