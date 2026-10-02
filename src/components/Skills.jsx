@@ -2,6 +2,25 @@ import React from 'react';
 import './Skills.css';
 import resume from '../assets/resume.pdf';
 
+const skillCategories = [
+    {
+        title: 'Languages',
+        items: ['Java', 'C++', 'Python', 'R', 'CSS', 'JavaScript', 'TypeScript', 'C', 'HTML', 'Racket', 'x86 Assembly'],
+    },
+    {
+        title: 'Tools & Platforms',
+        items: ['Figma', 'Git & GitHub', 'VSCode', 'Azure Machine Learning', 'Jupyter Notebook', 'Command Line/Terminal', 'R Studio'],
+    },
+    {
+        title: 'Frameworks',
+        items: ['JAX', 'React', 'React Flow', 'Tailwind CSS', 'Node.js', 'Swing', 'JUnit'],
+    },
+    {
+        title: 'Soft',
+        items: ['Problem-solving', 'Communication & Collaboration', 'Initiative & Self-Directed Learning', 'Project planning & time management', 'Rapid learning & adaptability', 'Scientific Literacy & Interdisciplinary Thinking'],
+    },
+];
+
 const SkillsSection = () => {
     return (
         <section className="skills-section">
@@ -14,61 +33,22 @@ const SkillsSection = () => {
                 </a>
             </div>
             <div className="skills-grid">
-                <div className="skill-category reveal">
-                    <h3>Languages</h3>
-                    <div className="skill-items">
-                        <div className="skill-item">Java</div>
-                        <div className="skill-item">C++</div>
-                        <div className="skill-item">Python</div>
-                        <div className="skill-item">R</div>
-                        <div className="skill-item">CSS</div>
-                        <div className="skill-item">JavaScript</div>
-                        <div className="skill-item">TypeScript</div>
-                        <div className="skill-item">C</div>
-                        <div className="skill-item">HTML</div>
-                        <div className="skill-item">Racket</div>
-                        <div className="skill-item">x86 Assembly</div>
+                {skillCategories.map((category) => (
+                    <div key={category.title} className="skill-category reveal">
+                        <h3>{category.title}</h3>
+                        <div className="skill-items">
+                            {category.items.map((item, i) => (
+                                <div
+                                    key={item}
+                                    className="skill-item"
+                                    style={{ animationDelay: `${i * 0.07}s` }}
+                                >
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
-
-                <div className="skill-category reveal">
-                    <h3>Tools & Platforms</h3>
-                    <div className="skill-items">
-                        <div className="skill-item">Figma</div>
-                        <div className="skill-item">Git & GitHub</div>
-                        <div className="skill-item">VSCode</div>
-                        <div className="skill-item">Azure Machine Learning</div>
-                        <div className="skill-item">Jupyter Notebook</div>
-                        <div className="skill-item">Command Line/Terminal</div>
-                        <div className="skill-item">R Studio</div>
-                        
-                    </div>
-                </div>
-
-                <div className="skill-category reveal">
-                    <h3>Frameworks</h3>
-                    <div className="skill-items">
-                        <div className="skill-item">JAX</div>
-                        <div className="skill-item">React</div>
-                        <div className="skill-item">React Flow</div>
-                        <div className="skill-item">Tailwind CSS</div>
-                        <div className="skill-item">Node.js</div>
-                        <div className="skill-item">Swing</div>
-                        <div className="skill-item">JUnit</div>
-                    </div>
-                </div>
-
-                <div className="skill-category reveal">
-                    <h3>Soft</h3>
-                    <div className="skill-items">
-                        <div className="skill-item">Problem-solving</div>
-                        <div className="skill-item">Communication & Collaboration</div>
-                        <div className="skill-item">Initiative & Self-Directed Learning</div>
-                        <div className="skill-item">Project planning & time management</div>
-                        <div className="skill-item">Rapid learning & adaptability</div>
-                        <div className="skill-item">Scientific Literacy & Interdisciplinary Thinking</div>
-                    </div>
-                </div>
+                ))}
             </div>
         </section>
     );
