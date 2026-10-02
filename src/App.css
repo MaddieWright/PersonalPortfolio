@@ -3,6 +3,16 @@
     --mouse-y: 50%;
 }
 
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(to right, #a0b98c, #c8dbb4);
+    z-index: 9999;
+    transition: width 0.1s linear;
+}
+
 .spotlight {
     pointer-events: none;
     position: fixed;

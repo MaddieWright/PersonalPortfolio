@@ -4,7 +4,7 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import './App.css'
 
@@ -34,6 +34,17 @@ function AppContent() {
         };
     }, [location.pathname]);
 
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+            setScrollProgress(scrollTop / (scrollHeight - clientHeight) * 100);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     useEffect(() => {
         const handleMouseMove = (e) => {
             document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
@@ -45,6 +56,7 @@ function AppContent() {
 
     return (
         <>
+            <div className="scroll-progress-bar" style={{ width: `${scrollProgress}%` }} />
             <div className="spotlight" />
             <Navbar />
             <Routes>
