@@ -98,3 +98,23 @@ button {
         margin-right: 0;
     }
 }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+.scroll-hint {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+    animation: bounce 1.4s ease-in-out infinite, fadeInUp 0.8s ease 1s both;
+    transition: opacity 0.5s ease;
+}
+
+.scroll-hint-hidden {
+    opacity: 0;
+    pointer-events: none;
+}

@@ -5,6 +5,7 @@ import Skills from './Skills'
 import Contact from './Contact'
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { FiChevronDown } from 'react-icons/fi';
 
 const roles = [
     'Developer',
@@ -20,6 +21,13 @@ function Home() {
     const [roleIndex, setRoleIndex] = useState(0);
     const [fade, setFade] = useState(true);
     const [typedTagline, setTypedTagline] = useState('');
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => { if (window.scrollY > 80) setScrolled(true); };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -60,6 +68,9 @@ function Home() {
                     <Link to="/contact">
                         <button>Let's Connect</button>
                     </Link>
+                </div>
+                <div className={`scroll-hint ${scrolled ? 'scroll-hint-hidden' : ''}`}>
+                    <FiChevronDown />
                 </div>
             </div>
             <div className="sections-wrapper">
