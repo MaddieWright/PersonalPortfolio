@@ -23,7 +23,7 @@ const skillCategories = [
 
 const SkillsSection = () => {
     return (
-        <section className="skills-section">
+        <section className="skills-section" id="skills">
             <div className="header">
                 <h2>Skills & Tech Stack</h2>
             </div>

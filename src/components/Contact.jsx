@@ -4,7 +4,7 @@ import resume from '../assets/resume.pdf';
 
 function Contact() {
     return (
-        <div className='main-container'>
+        <div className='main-container' id="contact">
             <p className="title">Let's Connect!</p>
             <p className="sub">Whether you're reaching out for a project, internship, or just to chat—I'd love to hear from you!</p>
             <ul className='sublist'>

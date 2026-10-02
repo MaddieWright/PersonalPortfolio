@@ -209,7 +209,7 @@ function Projects() {
     };
 
     return (
-        <div className="projects-section" ref={sectionRef}>
+        <div className="projects-section" id="projects" ref={sectionRef}>
             <h3>Projects</h3>
 
             <div className="filter-bar">
